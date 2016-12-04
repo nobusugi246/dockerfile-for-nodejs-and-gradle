@@ -2,7 +2,7 @@ FROM centos:7.2.1511
 
 RUN yum update -y \
     && yum install -y epel-release \
-    && yum install -y nodejs npm git java-1.8.0-openjdk-headless zip unzip initscripts which \
+    && yum install -y nodejs npm git java-1.8.0-openjdk-devel sudo zip unzip initscripts which \
     && yum clean all
 
 RUN npm install -g yo bower gulp-cli karma
